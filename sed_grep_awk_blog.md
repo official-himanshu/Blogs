@@ -40,7 +40,7 @@ is used to replace a word.
     learn less and more to improve skills
     keep hands one to know less.
     
-Here the “s” specifies the substitution operation. The “/” are delimiters. The “unix” is the search pattern and the “linux” is the replacement string.
+Here the “s” specifies the substitution operation. The “/” are delimiters. The “more” is the search pattern and the “less” is the replacement string.
 By default, the sed command replaces the first occurrence of the pattern in each line and it won’t replace the second, third…occurrence in the line.
 
 
@@ -121,7 +121,7 @@ The 'c' flag is used to modify a specific line. To modify a line, execute the co
 
     sed '<line no>c\<line>' <file name>
     
-The above command will update the line three. Consider the below output:
+The above command will be used as below. Consider the below output:
 
     himanshu@himanshu:~$ cat -n file
      1	hello
@@ -325,10 +325,10 @@ Typical use
     #print 1st and 4th column
     awk '{print $1, $4}' file.txt
 
-    #same with 'cat file.txt'
+    #same like cat file.txt print all data
     awk '{print $0}' file.txt
     
-    -F: Set input field sparator
+    #-F: Set input field sparator
     #print 1st and 4th column separated by ':'
     awk -F: '{print $1, $4}' file.txt
     #or
@@ -345,11 +345,6 @@ Typical use
     #print 2nd column when 1st field DOES NOT contain 'test'
     awk '$1 !~ /test/ { print $2 }' file.txt
 
-    #print 2nd column when this record contains 'test'
-    awk '/test/ { print $2 }' file.txt
-
-    #print 2nd column when this record DOES NOT contain 'test'
-    awk '! /test/ { print $2 }' file.txt
     In-place editing: -i (GNU awk 4.1.0 or later…)
 
 ##### Splitting a Line Into Fields 
