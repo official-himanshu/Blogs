@@ -36,7 +36,7 @@ Some prerequisite for this blog are:
         1      0.00B  15.6GB  15.6GB  fat32
 
 
-Looking at the output in the above output, we have two hard disks added on the test system and we will partition disk /dev/sdb.
+Looking at the output in the above output, we have one hard disks added on the test system and we will partition disk /dev/sdb.
 
 
 Now use parted command to start creating the partition on the selected storage device.
