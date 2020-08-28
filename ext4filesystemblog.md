@@ -97,7 +97,7 @@ Next, you need to properly format the new partition with the ext4 file system ty
         Creating journal (16384 blocks): done
         Writing superblocks and filesystem accounting information: done   
 
-Then label the partition using the e4label command as follows.
+Then label the partition using the e4label and e2label command as follows.
 
         root@himanshu:/home/himanshu# e2label /dev/sdb1 disk2-part1
         
@@ -105,7 +105,7 @@ Then label the partition using the e4label command as follows.
 Next, create a mount point and mount the newly created ext4 partition file system.
 
         root@himanshu:/home/himanshu# mkdir /mnt/disk2-part1
-        root@himanshu:/home/himanshu# mount /dev/sdb1 //mnt/disk2-part1
+        root@himanshu:/home/himanshu# mount /dev/sdb1 /mnt/disk2-part1
 
 Now using the df command, you can list all file systems on your system together with their sizes in a human readable format (-h), and their mount points and file system types (-T):
 
