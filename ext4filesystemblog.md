@@ -1,5 +1,6 @@
 # Creating and mounting ext4 file system
 ![ext4 file system image](https://github.com/official-himanshu/LinuxBlog/blob/master/file_system_linux_ext4.png)
+
 #### What is ext4 file system?
 The ext4 or fourth extended filesystem is a widely-used journaling file system for Linux. The ext4 file system is a scalable extension of the ext3 file system. It was designed as a progressive revision of the ext3 file system and overcomes a number of limitations in ext3.
 
