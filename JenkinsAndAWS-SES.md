@@ -63,11 +63,31 @@ Next we need to fill all required options in the given section to configure our 
 
 ![username and password](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-32-40.png)
 
-5. After that you will redirect to the creditionals details and you will see here that your username and password has been created successfully. You can find your username and password under "show User SMPTP Security Credentials". Just copy and paste them on jenkins email notification section.
+5. After that you will redirect to the creditionals details and you will see here that your username and password has been created successfully. You can find your username and password under "show User SMTP Security Credentials". Just copy and paste them on jenkins email notification section.
 
-![Username and password](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-32-40.png)
+![Username and password](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-33-13.png)
 
 6. After that you will done with the username and password. Next we need to check the "SSL option on jenkins email notification section".
+7. Next we need to provide the SMTP port which we find on the SMTP settings page. SMTP port may be 25, 465 and 587.
+8. The next step is to provide email in "Reply-to-address" section and "UTF-8" under charset section.
+9. Last we need check our email service by sending a test email. So for this check the box "Test configuration by sending test e-mail" and provide your "	Test e-mail recipient" details and send a test mail. After mail sent successfully you will check your recipient email to confirm the test email.
+
+![full configuration](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2020-02-32.png)
+
+10. Test email recieved look like as follows:
+
+![ test email ](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2020-02-51.png)
+
+This means your email notification has been successfully configured and can be used to send various email notifications in our jenkins pipeline.
+
+### Add post build action
+
+To use this email service in your project you need to add a post build action in your jenkins pipeline or freestyle project.
+
+### Conclusion
+
+In this blog we learn how can we configure a AWS simple email service with jenkins email notification to send email notification to various teams in our project.
+If we add a post build action as a email notification so we can easily send build report and error directly to the developer and other project members involved in the project. By this we just automate the process of CI by sending details directly on their email without doing it mannually.
 
 
 
