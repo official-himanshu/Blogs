@@ -1,4 +1,7 @@
 # How to integrate AWS simple email service with Jenkins
+
+![image](https://github.com/official-himanshu/Blogs/blob/master/Email-notifications-in-Jenkins-2.jpg)
+
 Jenkins is an open source tool written in java and plugin built for continuous integration and build automation purpose.
 It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
 
