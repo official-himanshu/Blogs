@@ -79,10 +79,16 @@ Next we need to fill all required options in the given section to configure our 
 ![ test email ](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2020-02-51.png)
 
 This means your email notification has been successfully configured and can be used to send various email notifications in our jenkins pipeline.
+After that click on save and your are done for this email configuration.
 
-### Add post build action
+### Add email notification to your project
 
-To use this email service in your project you need to add a post build action in your jenkins pipeline or freestyle project.
+To allow your projects to send email you need to add “Post Build Action” and select “Email Notification” from the drop down list.
+
+This will provide you the below interface where you can add list of email addresses to whom email is required to be sent.
+
+![ post build action](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2020-15-46.png)
+
 
 ### Conclusion
 
