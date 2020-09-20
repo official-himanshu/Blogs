@@ -46,9 +46,32 @@ After verification of email you show a "green verified" text in front of your em
 Next we need to go to our jenkins dashboard to configure our email notification.
 After going to jenkins dashboard we need to go as follows:
 
-###### manage Jenkins > Configure System > Email Notification you will see the following options under email notification section
+###### manage Jenkins > Configure System > Email Notification 
+You will see the following options under email notification section as shown in image below:
 
 ![email notification section](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-20-29.png)
+
+Next we need to fill all required options in the given section to configure our email notifier.
+
+1. SMTP Server:- First we need to add SMTP server. For this we need to go on AWS simple email dashboard and on the left side menu under Email sending section select SMTP settings. You will see the following screen which contains several information like server name, port, authentication etc.
+
+![SMTP section](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-26-06.png)
+
+2. Just copy the server name address of AWS and paste it over under SMTP server section in jenkins dashboard.
+3. Next check the box of "Use SMTP authentication" and we need to provide the username and password.
+4. For username and password we need to go to SES dashboard under SMTP setting and click on "Create my SMTP credentials". After that you will see a screen which asks for a username. So provide your email and click create.
+
+![username and password](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-32-40.png)
+
+5. After that you will redirect to the creditionals details and you will see here that your username and password has been created successfully. You can find your username and password under "show User SMPTP Security Credentials". Just copy and paste them on jenkins email notification section.
+
+![Username and password](https://github.com/official-himanshu/Blogs/blob/master/Screenshot%20from%202020-09-20%2019-32-40.png)
+
+6. After that you will done with the username and password. Next we need to check the "SSL option on jenkins email notification section".
+
+
+
+
 
 
 
