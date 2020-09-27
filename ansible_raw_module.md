@@ -1,4 +1,6 @@
 # How to install python in target host using Ansible
+![ansible_raw_module](https://github.com/official-himanshu/Blogs/blob/master/ansible.png)
+
 Ansible is an open-source automation engine that automates software provisioning, configuration management, and application deployment. 
 Ansible is quickly becoming the popular configuration management tool today. It lets you to control and config the target nodes from single host machine.
 As we know the only requirement in target machine is the modern version of python installed. But what if the python version is not installed on the target machines.
